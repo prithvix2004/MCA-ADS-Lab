@@ -1,8 +1,8 @@
-
 #include <stdio.h>
 
 #define MAX 8
 
+//Display
 void display(int set[])
 {
     int i, empty = 1;
@@ -23,6 +23,7 @@ void display(int set[])
     printf("}\n");
 }
 
+//Add
 void add(int set[], int element)
 {
     if (element >= 1 && element <= MAX)
@@ -34,6 +35,7 @@ void add(int set[], int element)
         printf("Invalid element!\n");
 }
 
+//Remove
 void removeElement(int set[], int element)
 {
     if (element >= 1 && element <= MAX)
@@ -45,6 +47,7 @@ void removeElement(int set[], int element)
         printf("Invalid element!\n");
 }
 
+//Union Set
 void unionSet(int A[], int B[], int C[])
 {
     int i;
@@ -53,6 +56,7 @@ void unionSet(int A[], int B[], int C[])
         C[i] = A[i] | B[i];
 }
 
+//Intersection
 void intersectionSet(int A[], int B[], int C[])
 {
     int i;
@@ -61,6 +65,7 @@ void intersectionSet(int A[], int B[], int C[])
         C[i] = A[i] & B[i];
 }
 
+//Difference
 void differenceSet(int A[], int B[], int C[])
 {
     int i;
